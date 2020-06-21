@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { getGrocerySections, addGrocerySection, deleteGrocerySection, setDefaultGrocerySection } = require("../controlers/Settings");
+const { getGrocerySections, addGrocerySection, deleteGrocerySection, setDefaultGrocerySection } = require("../controllers/Settings");
 
 // Preserve this order
 router.route("/grocerySections").get(getGrocerySections);

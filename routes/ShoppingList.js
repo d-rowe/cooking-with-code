@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { createShoppingListFile, getShoppingList, postNewShoppingList, addSectionIngredient, clearShoppingList } = require("../controlers/ShoppingList");
+const { createShoppingListFile, getShoppingList, postNewShoppingList, addSectionIngredient, clearShoppingList } = require("../controllers/ShoppingList");
 
 // Preserve this order
 router.route("/download").get(createShoppingListFile);

@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { getRecipes, addRecipe, deleteRecipe, deleteRecipeIngredient, addRecipeIngredient, saveEditedRecipe } = require("../controlers/recipes");
+const { getRecipes, addRecipe, deleteRecipe, deleteRecipeIngredient, addRecipeIngredient, saveEditedRecipe } = require("../controllers/recipes");
 
 // Preserve this order
 router.route("/edit").post(saveEditedRecipe);
